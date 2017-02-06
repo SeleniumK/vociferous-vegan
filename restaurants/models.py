@@ -20,7 +20,8 @@ class Restaurants(models.Model):
 
     name = models.CharField(max_length=250)
     address = models.CharField(max_length=250, unique=True)
-    location = models.PointField(max_length=40, null=True)
+    # location = models.PointField(max_length=40, null=True)
+    loc_slug = models.SlugField()
     hours = models.CharField(max_length=250)
     how_vegan = models.CharField(max_length=250, choices=VEGAN_LEVEL)
     website = models.CharField(max_length=250)

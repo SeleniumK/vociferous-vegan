@@ -1,5 +1,6 @@
-from django.shortcuts import render
 from django.http import HttpResponse
+from django.views.list import ListView
+from models import Restaurants
 
 
 def home(request):
